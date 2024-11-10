@@ -18,3 +18,24 @@ conda update -n base conda
 conda install -n base defaults::conda-libmamba-solver
 conda config --set solver libmamba
 ```
+
+## Prepping notebook for commit (manual)
+
+Standard cleaning:\
+`nb-clean clean notebook.ipynb`
+
+Keep original copy before cleaning:\
+`nb-clean clean < original.ipynb > cleaned.ipynb`
+
+Clean notebook but leave cell metadata:\
+`nb-clean check --preserve-notebook-metadata notebook.ipynb`
+
+To remove empty cells add `-e` flag.
+
+To preserve cell outputs use `-o` flag.
+
+More info about <a href="https://github.com/srstevenson/nb-clean">nb-clean</a>
+
+## Automatic preparation using pre-commit hooks:
+
+TODO
