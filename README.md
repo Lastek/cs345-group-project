@@ -1,4 +1,7 @@
 # cs345-group-project
+## Models
+<a href="https://drive.google.com/drive/folders/1-MHkMswFc7CxYdtASQorc5PKhktiUBAx?usp=sharing"> Link to Models </a>
+
 
 ## Setup
 
@@ -19,6 +22,21 @@ conda install -n base defaults::conda-libmamba-solver
 conda config --set solver libmamba
 ```
 
+## Automatic commit preparation using pre-commit hooks:
+Make sure your conda environment is active in the terminal and run:\
+`pre-commit install`
+
+This will clean the notebook before a commit is made.
+
+To override and commit without cleaning add the `--no-verify` flag:\
+`git commit -m "example" ---no-verify`
+
+Be careful as it will skip ALL other hooks you may have.
+
+To manually run the nb-clean pre-commit hook:
+`pre-commit run nb-clean`
+
+
 ## Prepping notebook for commit (manual)
 
 Standard cleaning:\
@@ -36,6 +54,3 @@ To preserve cell outputs use `-o` flag.
 
 More info about <a href="https://github.com/srstevenson/nb-clean">nb-clean</a>
 
-## Automatic preparation using pre-commit hooks:
-
-TODO
