@@ -1,3 +1,5 @@
 .vscode/
 *.code-workspace
 *.gz
+!df_reviews_with_scores-values.pkl.gz
+twitter-roberta-base-sentiment-latest
