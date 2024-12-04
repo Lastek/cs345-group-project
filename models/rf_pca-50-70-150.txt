@@ -1,0 +1,2 @@
+[2024-12-04 11:11:57]
+{'max_depth': 50, 'max_features': 70, 'n_estimators': 150}
