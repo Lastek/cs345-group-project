@@ -1,0 +1,2 @@
+[2024-11-24 12:42:31]
+{'estimator__n_estimators': [20, 50, 100, 150, 200, 250], 'estimator__max_features': [1, 20, 'sqrt', 50, 70, 90, 110], 'estimator__max_depth': [None, 10, 20, 30, 40, 50]}
